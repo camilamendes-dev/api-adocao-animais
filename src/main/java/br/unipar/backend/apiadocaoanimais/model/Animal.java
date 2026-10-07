@@ -1,8 +1,25 @@
 package br.unipar.backend.apiadocaoanimais.model;
 
+<<<<<<< HEAD
 public class Animal {
 
     private Long id;
+=======
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "animais")
+public class Animal {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+>>>>>>> main
     private String nome;
     private String especie;
     private Integer idade;
@@ -68,4 +85,8 @@ public class Animal {
     public void setAdotado(Boolean adotado) {
         this.adotado = adotado;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
